@@ -1,0 +1,17 @@
+import java.util.Scanner;
+
+public class ReversWords_v_1 {
+
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        String inputWord = scanner.nextLine();
+        String reversedWord = "";
+
+        for (int charSymbol = inputWord.length() - 1; charSymbol >= 0 ; charSymbol--) {
+            char currentSymbol = inputWord.charAt(charSymbol);
+            reversedWord += currentSymbol;
+        }
+        System.out.println(reversedWord);
+    }
+}
